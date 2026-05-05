@@ -1,6 +1,6 @@
 # FLASK-WEB-APP
 
-This is my simple Flask web app. Stores input data in MongoDB. Learning to create and deploy a "Dockerfile" which contains: mongo-express container, mongodb container and flask web application. 
+This is my simple Flask web app. Stores input data in MongoDB. Learning to create and deploy a "Dockerfile" which contains FLask web app 
 
 Short explanation how i did things:
 Created Flask web app, which makes connection to MongoDB
