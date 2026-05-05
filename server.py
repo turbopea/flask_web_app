@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 import pymongo
-from flask import Flask, request, render_template
+from flask import Flask, render_template, request
 
-app=Flask(__name__)
+app = Flask(__name__)
 myclient = pymongo.MongoClient("mongodb://admin:pass@mongo:27017/")
 database = myclient["CV-database"]
 columns = database["CVdictionary"]
 
-@app.route("/", methods=["GET","POST"])
 
+@app.route("/", methods=["GET", "POST"])
 def home():
-    if request.method == "POST"
+    if request.method == "POST":
         name = request.form.get("name")
         email = request.form.get("email")
         interests = request.form.get("interests")
@@ -19,5 +19,6 @@ def home():
         columns.insert_one(mydict)
 
     return render_template("index.html")
+
 
 app.run(host="0.0.0.0", port=5000)
