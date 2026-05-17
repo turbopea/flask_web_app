@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+.left-wing {
+  grid-column: 50;
+  grid-row: 1;
+}
+.left-middle {
+  grid-column: 1;
+  grid-row: 1;
+}
+.right-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+.right-bottom {
+  grid-column: 1;
+  grid-row: 1;
+}
