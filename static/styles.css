@@ -1,9 +1,14 @@
 body {
   background-color: black;
+  margin: 1px;
 }
 .container {
   display: flex;
   min-height: 100vh;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 1rem;
+  padding: 1rem;
 }
 .navbar {
   border: 2px solid rgb(96 139 168);
@@ -15,6 +20,7 @@ body {
 }
 .navbar nav {
   color: #00aaff;
+  font-size: 5em;
 }
 .picture {
   border: 2px solid rgb(96 139 168);
@@ -32,7 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid rgb(96 139 168);
-  bottom: 25%;
+  bottom: 12%;
   flex-direction: column;
 }
 .overlay h1 {
