@@ -1,55 +1,67 @@
-<!--
-<script>
-    function editProfile() {
-        document.querySelector(".container").style.display = "none";
-        document.querySelector(".container-edit").style.display = "block";
+<!doctype html>
 
-        const name = document.querySelector("#name").textContent;
-        document.querySelector("#input-name").value = name;
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Zirnis DEVOPS CP</title>
+  </head>
+  <link href="static/styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?
+    family=Roboto:ital,wght@0,100.900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h2>EZ</h2>
+        <nav>Home</nav>
+        <nav>Contacts</nav>
+        <nav>Create Your Own CV</nav>
+        <nav>Download</nav>
+      </div>
 
-        const email = document.querySelector("#email").textContent;
-        document.querySelector("#input-email").value = email;
+      <div class="picture">
+          <img class="profile-pic" src="static/profile.jpg"/>
+          <div class="overlay">
+              <h1>Eriks Zirnis</h1>
+              <h2>Junior DevOps</h2>
+              <p>linkedin, facebook, instagram, github</p>
 
-        const interests = document.querySelector("#interests").textContent;
-        document.querySelector("#input-interests").value = interests;
-
-        const header = document.querySelector("#header").textContent;
-        document.querySelector("#input-header").value = header;
-    }
-
-    function saveProfile() {
-        document.querySelector("#name").textContent =
-            document.querySelector("#input-name").value;
-        document.querySelector("#email").textContent =
-            document.querySelector("#input-email").value;
-        document.querySelector("#interests").textContent =
-            document.querySelector("#input-interests").value;
-        document.querySelector("#header").textContent =
-            document.querySelector("#input-header").value;
-        document.querySelector(".container").style.display = "block";
-        document.querySelector(".container-edit").style.display = "none";
-    }
-</script>
--->
-<html>
-    <head>
-        <style>
-            .container-edit {
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="container">
-                <div class="left-wing">Left Wing</div>
-                <h1>TEST</h1>
-                <div class="left-middle">Left Middle</div>
-
-                <div class="right-top">Right Top</div>
-
-                <div class="right-bottom">Right Bottom</div>
+          </div>
+      </div>
+      <div class="rightwing">
+        <div class="resume">
+            <h1>RESUME</h1>
+            <div class="resume" id="one">
+                <h3>Experience / Experience in DevOps / Certificates</h3>
             </div>
+            <p>Experience description, what can i do and have i done.
+                Description about 150 words long.
+            </p>
         </div>
-    </body>
+        <div class="skills">
+            <h1>SKILLS</h1>
+            <h3>web development</h3>
+            <progress id = "1st" value = "80" max="100">80%</progress>
+            <h3>video editing</h2>
+            <progress id = "2st" value = "80" max="100">80%</progress>
+            <h3>Coding in python</h3>
+            <progress id = "3st" value = "80" max="100">80%</progress>
+            <h3>AWS</h3>
+            <progress id = "4st" value = "80" max="100">80%</progress>
+            <h3>GIT</h3>
+            <progress id = "5st" value = "80" max="100">80%</progress>
+            <h3>graphic design</h3>
+            <progress id = "6st" value = "80" max="100">80%</progress>
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
 </html>

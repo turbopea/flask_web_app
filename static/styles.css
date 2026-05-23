@@ -1,23 +1,74 @@
+body {
+  background-color: black;
+}
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100vh;
+  display: flex;
+  min-height: 100vh;
+}
+.navbar {
+  border: 2px solid rgb(96 139 168);
+  width: 5vw;
+  background-color: #111111;
+}
+.navbar h2 {
+  color: #00aaff;
+}
+.navbar nav {
+  color: #00aaff;
+}
+.picture {
+  border: 2px solid rgb(96 139 168);
+  height: 75vh;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(96 139 168);
+  bottom: 25%;
+  flex-direction: column;
+}
+.overlay h1 {
+  color: white;
+}
+.overlay h2 {
+  color: white;
+}
+.overlay p {
+  color: white;
 }
 
-.left-wing {
-  grid-column: 50;
-  grid-row: 1;
+.rightwing {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(96 139 168);
+  background-color: #111111;
 }
-.left-middle {
-  grid-column: 1;
-  grid-row: 1;
+.resume {
+  border: 2px solid rgb(96 139 168);
 }
-.right-top {
-  grid-column: 1;
-  grid-row: 1;
+.resume h1 {
+  color: white;
 }
-.right-bottom {
-  grid-column: 1;
-  grid-row: 1;
+.resume #one {
+  color: #00aaff;
+}
+.resume p {
+  color: white;
+}
+.skills {
+  border: 2px solid rgb(96 139 168);
+}
+.skills h1 {
+  color: white;
+}
+.skills h3 {
+  color: white;
 }
