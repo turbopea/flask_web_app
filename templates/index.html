@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Zirnis DEVOPS CP</title>
     <script src="https://kit.fontawesome.com/7efa1ccb97.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <link href="static/styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,9 +20,7 @@
     <div class="container">
       <div class="navbar">
         <h2 id="EZ">EZ</h2> 
-        <nav><i class="fa-regular fa-house"></i> </nav>
-        <nav><i class="fa-regular fa-address-book"></i></nav>
-        <nav><button>Create your CV</button></nav>
+        <a href="../static/CV_ZIRNIS.pdf" download><i class="fa-solid fa-download"></i></a>
       </div>
 
       <div class="picture">
@@ -30,44 +28,66 @@
           <div class="overlay">
               <h1>Eriks Zirnis</h1>
               <h2>Junior DevOps</h2>
-              <p><i class="fa-brands fa-linkedin-in"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-github"></i>
-                  <i class="fa-brands fa-square-instagram"></i></p>
+              <p><a href="https://linkedin.com/in/erikszirnis" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://facebook.com/turbozirnis" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://github.com/turbopea" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://instagram.com/erikszirnis/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></p>
 
           </div>
       </div>
       <div class="rightwing">
         <div class="resume">
-            <h1>resume</h1>
+            <h2>resume</h2>
             <div class="resume" id="one">
-                <h3>Experience / Experience in DevOps / Certificates</h3>
+                <h3>AWS certified  /  Python projects  /  building toward DevOps</h3>
             </div>
-            <p>Experience description, what can i do and have i done.
-                Description about 150 words long.
+            <p class="summary">
+              DevOps-focused developer with hands-on AWS experience — setting up EC2 instances, 
+              configuring security groups, and working across S3, DynamoDB, and RDS. Built Python 
+              apps that pull and filter live API data, and comfortable with Git and Linux in a daily 
+              workflow. Currently containerizing a Flask app with Docker to deploy on EC2.
             </p>
         </div>
         <hr>
         <div class="skills">
             <h1><i class="fa-solid fa-gauge"></i>
                 skills</h1>
-            <div class="progress-bar">
-              <div class="progress-label">
-                <span>web development</span>
-                <span>80%</span>
-              </div>
-              <progress id = "skill-1" value = "80" max="100"></progress>
-              
-              <h3>video editing</h3>
-              <progress id = "skill-2" value = "80" max="100">80%</progress>
-              <h3>Coding in python</h3>
-              <progress id = "skill-3" value = "80" max="100">80%</progress>
-              <h3>AWS</h3>
-              <progress id = "skill-4" value = "80" max="100">80%</progress>
-              <h3>GIT</h3>
-              <progress id = "skill-5" value = "80" max="100">80%</progress>
-              <h3>graphic design</h3>
-              <progress id = "skill-6" value = "80" max="100">80%</progress>
+            <h3>Cloud (AWS)</h3>
+            <ul>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>EC2 — instance setup, security groups, configuration</li>
+              <li>S3 — buckets and storage</li>
+              <li>DynamoDB, RDS — basics, currently learning</li>
+            </ul>
+
+            <h3>Containers</h3>
+            <ul>
+              <li>Docker — writing Dockerfiles, building and running containers</li>
+              <li>YAML — service configuration</li>
+            </ul>
+
+            <h3>Python</h3>
+            <ul>
+              <li>Core syntax, OOP, functions, working with REST APIs</li>
+              <li>Social-media analytics app — fetches view and like counts via API, filters by keyword, exports matching links to a file</li>
+              <li>Currency converter — pulls live exchange rates from an API</li>
+            </ul>
+
+            <h3>Version Control</h3>
+            <ul>
+              <li>Git — add, commit, push, pull, branch, log, status</li>
+            </ul>
+
+            <h3>Web</h3>
+            <ul>
+              <li>HTML, CSS — built this site by hand</li>
+            </ul>
+
+            <h3>Operating Systems</h3>
+            <ul>
+              <li>Linux — comfortable in Unix-based terminals; hosted and configured EC2 Linux environments</li>
+            </ul>
+          </section>
 
               
             </div>
