@@ -97,6 +97,7 @@ body {
   height: 95vh;
   overflow-y: auto;
   scrollbar-width: none;
+  width: 25vw;
 }
 .rightwing::-webkit-scrollbar {
   display: none;
