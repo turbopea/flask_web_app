@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0px;
   font-family:'Courier New', Courier, monospace
@@ -13,7 +15,7 @@ body {
 }
 .navbar {
   border: 0px solid rgb(96 139 168);
-  width: 7vw;
+  width: 6vw;
   flex-direction: column;
   display: flex;
   background-color: #141414;
@@ -25,7 +27,7 @@ body {
 #EZ{  
   color: #00aaff;
   text-shadow:-6px 3px 0px #3b3b3b;
-  font-size: 3em;
+  font-size: 3vw;
   justify-self: center;
   align-self: center;
 }
@@ -35,7 +37,7 @@ body {
 
 .navbar a{
   color: white;
-  font-size: 3em;
+  font-size: 3vw;
 }
 .navbar a:hover {
   color: #00aaff;
@@ -43,29 +45,36 @@ body {
 }
 
 .picture {
-  border: 0px solid rgb(96 139 168);
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
   height: 95vh;
-  margin-right: 1%
-  
+  margin-right: 1%;
+  margin-top: 1%
 }
+
 .picture img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  border-radius: 20px;
 }
 .overlay {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0px solid rgb(96 139 168);
-  bottom: 20%;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  
 }
 .overlay h1 {
   color: white;
-  font-size: 5em;
+  font-size: 5vw;
   margin: 0;
 }
 .overlay h1:hover {
@@ -73,7 +82,7 @@ body {
 }
 .overlay h2 {
 
-  font-size: 2em;
+  font-size: 3vw;
   margin: 0;
   color: #00aaff;
 }
@@ -83,7 +92,7 @@ body {
 .overlay p a{
   color: white;
   margin: 1vh;
-  font-size: 2em;
+  font-size: 2vw;
   text-decoration: none;
 }
 .overlay p a:hover {
@@ -136,3 +145,49 @@ width: 90%
   color: #00aaff;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+  }
+  #EZ {
+    font-size: 8vw;
+    margin-left: 15px;
+  }
+  .navbar a {
+    font-size: 10vw;
+    margin-right: 15px;
+  }
+  .picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .picture img {
+    height: auto;
+    object-fit: contain;
+  }
+  .overlay h1 {
+    font-size: 9vw;
+  }
+  .overlay h2 {
+    font-size: 6vw;
+  }
+  .overlay p a {
+    font-size: 6vw;
+  }
+  .rightwing {
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    box-sizing: border-box;
+    padding: 4vw;
+  }
+  .resume h2 {
+    font-size: 16vw;
+  }
+}
