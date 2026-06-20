@@ -1,37 +1,33 @@
 # FLASK-WEB-APP
 
-This is my simple Flask web app. Stores input data in MongoDB. Learning to create and deploy a "Dockerfile" which contains FLask web app 
+This is my simple Flask web app. It holds my Curriculum Vitae for Juniour DevOps role. It is being hosted on EC2 instance on flask server.
+Built with Python (Flask), containerized with Docker, and deployed on an
+AWS EC2 instance. The Docker image is stored in Amazon ECR.
 
-Short explanation how i did things:
-Created Flask web app, which makes connection to MongoDB
-Created index.html file which is attached to FLASK web app file. "server.py"
-Created Dockerfile, which pulls docker image from python, installs requirments.txt(flask, pymongo) and creates an docker image of Flask app.
-Used Amazon ECR to push the docker image to ECR.
-Created mongo.yaml file, which pulls 3 docker images: Flask web app, mongo-express, mongoDB. It pulls 3 images and runs them as separate containers
-Flask web app, mongo-express, mongodb.
-Then run docker-compose -f mongo.yaml up to setup all containers and they speak to each other.
-To test things out, use localhost:5001
-## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-To be added
-```
+The site is a single page (`index.html`) styled with hand-written CSS,
+served by Flask. It started as a multi-container project (Flask +
+MongoDB + mongo-express) to practice Docker Compose and database
+integration; it has since been simplified to a static CV with no
+database, since storage wasn't needed for a CV site.
+## Technologies
+- Python 3 / Flask
+- Docker
+- Amazon ECR (image registry)
+- AWS EC2 (hosting)
 
 ## Usage
 
-```python
-To be added
+**Run locally:**
+```bash
+python server.py
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
+Then open `http://localhost:80` in your browser.
+**Run with Docker:**
+```bash
+docker build -t flask-cv .
+docker run -p 5001:5001 flask-cv
+```
+Then open `http://localhost:80`.
 ## License
-
-What kind of license is necessary for this?
+MIT LICENSE
