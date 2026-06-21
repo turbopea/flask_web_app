@@ -1,11 +1,10 @@
 FROM python
-ENV MONGO_DB_USERNAME=admin \
-    MONGO_DB_PWD=pass
+
 WORKDIR /home/app
 
-COPY docker/requirements.txt .
+COPY . . 
 
-RUN pip install -r requirements.txt
+RUN pip install -r docker/requirements.txt
 COPY . .
 
 CMD ["python3", "server.py"]
