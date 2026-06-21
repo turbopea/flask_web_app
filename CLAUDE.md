@@ -1,1 +1,0 @@
-This is my flask_web_app project, where i created simple flask server, which requests html website. Have dockerfile within, but right now i am working with html and css files. I want to style my website like i want to create devops CV for my future career DevOps. So I am currently creating front-end of the project. 
