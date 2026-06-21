@@ -22,12 +22,12 @@ database, since storage wasn't needed for a CV site.
 ```bash
 python server.py
 ```
-Then open `http://localhost:80` in your browser.
+Then open `http://localhost:5001` in your browser.
 **Run with Docker:**
 ```bash
 docker build -t flask-cv .
-docker run -p 80:80 flask-cv
+docker run -p 80:5001 flask-cv
 ```
-Then open `http://localhost:80`.
+Then open `http://localhost:5001`.
 ## License
 MIT LICENSE
