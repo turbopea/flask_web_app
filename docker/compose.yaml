@@ -1,0 +1,5 @@
+services:
+  flask-web-app:
+    image: 106601314571.dkr.ecr.eu-north-1.amazonaws.com/turbopea/flask-web-app:latest
+    ports:
+      - 5001:5001
