@@ -144,6 +144,9 @@ width: 90%
 .skills li {
   color: #00aaff;
 }
+.skills li a {
+  color: white;       
+  }
 
 @media (max-width: 768px) {
   .container {
@@ -166,6 +169,9 @@ width: 90%
     max-width: 100%;
     height: auto;
     margin-right: 0;
+  }
+  .skills li a {
+  color: white;        
   }
   .picture img {
     height: auto;
