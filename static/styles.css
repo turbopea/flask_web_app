@@ -98,6 +98,16 @@ body {
 .overlay p a:hover {
   color: #00aaff;
 }
+.overlay address {
+  color: white;
+}
+.overlay address a{
+  color: white;
+  text-decoration: none;
+}
+.overlay address a:hover {
+  color: #00aaff;
+}
 .rightwing {
   display: flex;
   flex-direction: column;
