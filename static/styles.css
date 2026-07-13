@@ -196,6 +196,13 @@ width: 90%
   .overlay p a {
     font-size: 6vw;
   }
+  .overlay address {
+  color: white;
+  }
+  .overlay address a{
+  color: white;
+  text-decoration: none;
+  }
   .rightwing {
     width: 100%;
     height: auto;
