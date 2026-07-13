@@ -70,7 +70,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  
+  text-align: center;
 }
 .overlay h1 {
   color: white;
@@ -100,6 +100,10 @@ body {
 }
 .overlay address {
   color: white;
+  font-style: normal;
+  font-size: 1.2vw;
+  max-width: 90%;
+  margin-top: 1vh;
 }
 .overlay address a{
   color: white;
